@@ -1,5 +1,6 @@
 body{
   background-color: #FAFAFA;
+  font-size: 16px;
 }
 .App {
   text-align: center;
@@ -7,11 +8,14 @@ body{
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 50px;
 }
-
+.App-logo:hover{
+  animation: App-logo-spin infinite 10s linear;
+}
 .App-header {
+  display: flex;
+  justify-content: space-between;
   background-color: #FAFAFA;
   height: 50px;
   padding: 20px;
@@ -26,10 +30,24 @@ body{
 .App-intro {
   font-size: large;
 }
+.content-page{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
 
+.content-middle{
+  width: 70%;
+}
+.slide-right{
+  text-align: left;
+  padding-left: 10px;
+  width: 300px;
+  background-color: #e8690d;
+}
 .no-vote{
   list-style: none;
-  background-image: url('./error.svg');
+  background-image: url('./Image/error.svg');
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 20px;
@@ -37,16 +55,65 @@ body{
 
 .vote{
   list-style: none;
-  background-image: url('./success.svg');
+  background-image: url('./Image/success.svg');
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 20px;
 }
-.listname{
-  position: absolute;
-  right: 100px;
+
+
+.form-vote{
+  margin-top: 50px;
 }
 
+.btOui{
+  margin: 10px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  background-color: #5eb130;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.btNon{
+  margin: 10px;
+  border: none;
+  height: 50px;
+  width: 200px;
+  background-color:#e52816;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.btOui:hover{
+  background-color: #336D00;
+}
+.nameInput{
+  height: 25px;
+  border: 1px solid;
+  border-radius: 0;
+}
+
+.inputQuestion{
+  height: 25px;
+  border: 1px solid;
+  border-radius: 0;
+}
+.btNon:hover{
+  background-color: #8C0D00
+}
+.question{
+  color: #311C10;
+  font-size: 36px;
+}
+.jeVote{
+  font-family: 'Montserrat Hairline', arial;
+  font-size: 16px;
+  color: #e8690d;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
